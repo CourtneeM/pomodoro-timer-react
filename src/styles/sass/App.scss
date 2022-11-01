@@ -17,11 +17,20 @@
     border: 1px solid #000;
     border-radius: 6px;
     cursor: pointer;
+    
+    p { pointer-events: none; }
+  }
+
+  #selected-option {
+    font-weight: bold;
+    color: #fff;
+    background-color: teal;
   }
 }
 
 .timer-container {
   margin-bottom: 30px;
+
   p {
     font-size: 60px;
     font-weight: bold;
