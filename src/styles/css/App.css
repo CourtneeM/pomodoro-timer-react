@@ -4,11 +4,14 @@
   align-items: center;
   padding: 100px 0;
 }
+.App h1 {
+  margin-bottom: 40px;
+}
 
 .options-container {
   display: flex;
   gap: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .options-container div {
   width: 125px;
@@ -24,7 +27,7 @@
 .options-container #selected-option {
   font-weight: bold;
   color: #fff;
-  background-color: teal;
+  background-color: red;
 }
 
 .timer-container {
@@ -44,14 +47,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  padding: 5px;
   border: 1px solid #000;
   cursor: pointer;
 }
 .controls-container div img {
   width: 30px;
   height: 30px;
+  pointer-events: none;
+}
+.controls-container #selected-control {
+  background-color: #000;
 }
 
 .progress-container {

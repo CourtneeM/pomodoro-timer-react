@@ -3,12 +3,16 @@
   flex-direction: column;
   align-items: center;
   padding: 100px 0;
+
+  h1 {
+    margin-bottom: 40px;
+  }
 }
 
 .options-container {
   display: flex;
   gap: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   div {
     width: 125px;
@@ -24,7 +28,7 @@
   #selected-option {
     font-weight: bold;
     color: #fff;
-    background-color: teal;
+    background-color: red;
   }
 }
 
@@ -46,15 +50,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    padding: 5px;
     border: 1px solid #000;
     cursor: pointer;
 
     img {
       width: 30px;
       height: 30px;
+      pointer-events: none;
     }
+  }
+
+  #selected-control {
+    background-color: #000;
   }
 }
 

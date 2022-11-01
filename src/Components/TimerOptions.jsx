@@ -7,13 +7,11 @@ const TimerOptions = ({ selectTime }) => {
     const times = {
       'pomodoro': 25*60,
       'short break': 5*60,
-      'long break': 15*60
+      'long break': 1*60
     }
 
     selectTime(times[selectedOption]);
   }, [selectedOption]);
-
-  
 
   const changeSelected = (e) => {
     const optionsContainer = document.querySelector('.options-container');
